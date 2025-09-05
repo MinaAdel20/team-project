@@ -1,0 +1,144 @@
+/* start global */
+:root {
+  --main-color: #565e6cff;
+  --back-color: #f8fafc;
+  --hover-color: #204d76ff;
+  --btn-color:#3175b4ff;
+  --Dark-Olive-btn:#4B694B;
+  --Olive-hover-btn:#198754;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* end global */
+/* start landing */
+
+.landing {
+  background-color: #fff;
+  min-height: calc(100vh - 68.8px);
+}
+
+.landing .my-container {
+  background-color: #f0f9ff;
+  border-radius: 16px;
+  min-height: 60vh;
+}
+
+.landing .heading h1,
+.landing .heading .h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  font-size: 3rem;
+}
+.landing .img .figure {
+  width: 80%;
+  padding: 50px;
+  border-radius: 40px !important;
+}
+.landing .img .figure img {
+  border-radius: 40px !important;
+  object-fit: cover;
+  width: 90%;
+  max-height: 180px;
+}
+
+/* End Landing */
+
+/* start landing-two  */
+
+.landing-two {
+  background-color: var(--back-color);
+}
+
+.landing-two .card {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+.landing-two .card:hover {
+  transform: translateY(-10px);
+}
+.landing-two .card .collapse {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+.landing-two .card .card-text {
+  -webkit-line-clamp: 4;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.landing-two .card .card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.landing-two .card .open{
+  background-color: var(--Olive-hover-btn);
+}
+.landing-two .card .open:hover{
+  background-color: var(--Dark-Olive-btn);
+}
+.landing .landing-btn,
+.landing-two .card .Submit-Solution,
+.landing-two .card .in-progress{
+  background-color: var(--btn-color);
+}
+.landing .landing-btn:hover,
+.landing-two .card .Submit-Solution:hover,
+.landing-two .card .in-progress:hover{
+  background-color: var(--hover-color);
+}
+/* end landing-two  */
+
+
+  .custom-card {
+    transition: all 0.3s ease;
+  }
+
+  .custom-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  h4 {
+    font-weight: 600;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  .text-primary {
+    color: #007bff !important;
+  }
+
+  .text-primary:hover {
+    text-decoration: underline !important;
+  }

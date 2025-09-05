@@ -1,0 +1,93 @@
+
+
+    /* 📦 شكل صندوق الشات */
+    .chat-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      height: 70vh;
+      overflow-y: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* 📩 شكل الرسائل */
+    .message {
+      margin-bottom: 15px;
+    }
+    .message.sent {
+      text-align: right; /* الرسالة بتاعتك */
+    }
+    .message .text {
+      display: inline-block;
+      padding: 10px 15px;
+      border-radius: 20px;
+      max-width: 70%;
+    }
+    .message.sent .text {
+      background-color: #0d6efd;
+      color: white;
+    }
+    .message.received .text {
+      background-color: #e9ecef;
+    }
+
+    /* ⚡ تعديل مكان اللينكات (Home - Developers - Leaderboard - FAQ) */
+    .custom-nav {
+      margin-right: 20px; /* قربها ناحية اليمين */
+    }
+    #Margin {
+      margin-left: 110px;
+    } 
+
+
+    /* Profile Image */
+    .profile-img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    /* Center Navbar Items */
+    .navbar-nav {
+      margin: 0 auto;
+    }
+
+    /* Dropdown Menu Width */
+    .dropdown-menu {
+      min-width: 180px;
+    }
+
+    /* Blue line under navbar */
+    .navbar {
+      border-bottom: 2px solid #2e6eb5;
+    }
+
+    /* Hover Effect on Navbar Links */
+    .nav-link {
+      transition: 0.3s;
+      padding: 8px 15px !important;
+      border-radius: 5px;
+    }
+    .nav-link:hover {
+      
+      color: #2e6eb5 !important;
+    }
+
+    /* Search Bar Style */
+    .custom-search {
+      border: 1px solid #ccc;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .custom-search:focus {
+      border-color: #2e6eb5;
+      box-shadow: none !important;
+      outline: none;
+    }
+    .search-btn {
+      border-radius: 0;
+      border: 1px solid #ccc;
+      border-right: none;
+    }
