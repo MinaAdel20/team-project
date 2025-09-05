@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- إعداد اللغة والترميز -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mashakelna</title>
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="../css/features Settings Page.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+ </head>
+<body>
+
+    <!---------------------------------------------start navbar ------------------------------------->
+    <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-3 gt-2" href="../index.html">
+          Mashakelna
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./developer.html">Developers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./leaderboard.html"
+                >Leaderboard</a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#FAQ">FAQ</a></li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-regular fa-bell pe-2"></i
+                    ><span>Notifications</span></a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-regular fa-user pe-2"></i
+                    ><span>Your Profile</span></a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-gear pe-2"></i
+                    ><span>Setting</span></a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-right-from-bracket pe-2"></i
+                    ><span>Log out</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="nav-item mx-3">
+            <form class="nav-search" role="search" method="get">
+              <div
+                class="input-group rounded-pill overflow-hidden shadow-sm"
+                style="max-width: 420px"
+              >
+                <input
+                  type="search"
+                  class="form-control border-0"
+                  placeholder="Search for developer..."
+                  aria-label="Search for developer"
+                />
+                <button class="btn btn-search px-4" type="submit">
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="nav-item ms-3">
+            <a href="">
+              <img
+                src="../imgs/landing.png"
+                alt="Profile"
+                class="rounded-circle"
+                style="width: 35px; height: 35px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!---------------------------------------------end navbar-------------------------------------->
+
+  <!-- 🟦 الحاوية الرئيسية -->
+  <div class="container my-5">
+    <!-- عنوان القسم -->
+    <h2 class="fw-bold">Settings</h2>
+    <p class="text-muted">Manage your account details and preferences.</p>
+
+    <!-- 🟩 قسم البروفايل -->
+    <div class="card p-4 mb-4">
+      <h5 class="fw-bold mb-3">Account Profile</h5>
+
+      <!-- صورة الحساب والاسم -->
+      <div class="d-flex align-items-center mb-3">
+        <img src="https://i.pravatar.cc/80" class="rounded-circle me-3" alt="avatar">
+        <div>
+          <p class="mb-0 fw-semibold">dev_innovator</p>
+          <button class="btn btn-sm btn-outline-primary mt-1">Change Avatar</button>
+        </div>
+      </div>
+
+      <!-- تعديل اليوزر نيم -->
+      <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input type="text" class="form-control" value="dev_innovator">
+      </div>
+
+      <!-- الايميل (مقفول) -->
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <div class="input-group">
+          <input type="email" class="form-control" value="dev.innovator@email.com" disabled>
+          <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+        </div>
+        <small class="text-muted">
+          Email address cannot be changed directly. Please contact support.
+        </small>
+      </div>
+<p>1</p>
+      <!-- تعديل الباسورد -->
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" value="********">
+      </div>
+      <button class="btn btn-outline-primary">Change Password</button>
+    </div>
+
+    <!-- 🟩 قسم الإشعارات -->
+    <div class="card p-4 mb-4">
+      <h5 class="fw-bold mb-3">Notification Preferences</h5>
+
+      <!-- إشعارات عامة -->
+      <p class="d-flex justify-content-between align-items-center">
+        <span><i class="bi bi-bell me-2"></i> Enable All Notifications</span>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" checked>
+        </div>
+      </p>
+
+      <!-- إشعار مشكلة جديدة -->
+      <p class="d-flex justify-content-between align-items-center">
+        <span><i class="bi bi-plus-circle me-2"></i> New Problem Posted</span>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" checked>
+        </div>
+      </p>
+
+      <!-- إشعار حل تم تسليمه -->
+      <p class="d-flex justify-content-between align-items-center">
+        <span><i class="bi bi-check2-circle me-2"></i> Solution Submitted</span>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" checked>
+        </div>
+      </p>
+
+      <!-- إشعار رسالة جديدة -->
+      <p class="d-flex justify-content-between align-items-center">
+        <span><i class="bi bi-chat-dots me-2"></i> New Message Received</span>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox">
+        </div>
+      </p>
+    </div>
+
+    <!-- 🟩 قسم المظهر (Dark Mode) -->
+    <div class="card p-4 mb-4">
+      <h5 class="fw-bold mb-3">Appearance Settings</h5>
+      <p class="d-flex justify-content-between align-items-center">
+        <span><i class="bi bi-moon me-2"></i> Dark Mode</span>
+        <div class="form-check form-switch">
+          <!-- مفتاح تفعيل الوضع الليلي -->
+          <input class="form-check-input" type="checkbox" id="darkToggle">
+        </div>
+      </p>
+    </div>
+
+    <!-- 🟥 منطقة الخطر (حذف الحساب) -->
+    <div class="card p-4 danger-zone">
+      <h5 class="fw-bold text-danger mb-3">
+        <i class="bi bi-exclamation-triangle"></i> Danger Zone
+      </h5>
+      <p class="text-muted">
+        Permanently delete your account and all associated data. This cannot be undone.
+      </p>
+      <button class="btn btn-danger">
+        <i class="bi bi-trash"></i> Delete Account
+      </button>
+    </div>
+  </div>
+
+ 
+
+    <!-- ====== Start Footer ====== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <div class="footer-logo">🌐</div>
+          <p class="footer-desc">
+            Facilitating problem-solving and collaboration between users and
+            developers.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  <script src="../js/all.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js.map"></script>
+
+
+  <!-- 🟦 كود تفعيل الوضع الليلي -->
+  <script>
+    const darkToggle = document.getElementById("darkToggle");
+    darkToggle.addEventListener("change", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>

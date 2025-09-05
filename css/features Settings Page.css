@@ -1,0 +1,27 @@
+
+
+    /* الكروت (الصناديق البيضاء) */
+    .card {
+      border-radius: 12px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* شكل مميز لمنطقة الخطر */
+    .danger-zone {
+      border: 1px solid #f5c2c7;
+    }
+
+    /* 🌙 وضع الليل (Dark Mode) */
+    body.dark-mode {
+      background-color: #121212;
+      color: #e9ecef;
+    }
+    body.dark-mode .card {
+      background-color: #1e1e1e;
+      color: #e9ecef;
+      border: 1px solid #333;
+    }
+    body.dark-mode .navbar {
+      background-color: #1e1e1e !important;
+      border-bottom: 1px solid #333;
+    }
